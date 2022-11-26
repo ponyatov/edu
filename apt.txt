@@ -1,0 +1,4 @@
+git make curl rsync
+code doxygen clang-format
+bc libncurses5-dev bzip2 xz-utils
+gcc g++ flex bison

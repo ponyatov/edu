@@ -16,6 +16,22 @@
         },
     ],
 
+    // files
+    "files.exclude": {
+        "docs/**":true,
+        // "buildroot-*/**":true,
+        ".vscode/*.log":true,
+	},
+    "files.watcherExclude": {
+        "docs/**":true,
+        "buildroot-*/**":true,
+    },
+    "files.associations": {
+        "*.br": "makefile",
+        "*.kernel": "makefile",
+        "*.config": "makefile",
+    },
+
     // editor
     "editor.tabSize": 4,
     "editor.rulers": [80],
