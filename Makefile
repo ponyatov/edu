@@ -54,6 +54,14 @@ fw: $(BR)/README.md
 %/README.md: $(GZ)/%.tar.xz
 	xzcat $< | tar x && touch $@
 
+# doc
+.PHONY: doxy doc
+doc: doxy
+	rsync -rv ~/mdoc/$(MODULE)/* doc/$(MODULE)/
+	rsync -rv ~/mdoc/Buildroot/* doc/Buildroot/
+	rsync -rv ~/mdoc/Linux/*     doc/Linux/
+	git add doc
+
 # install
 install: gz src
 	$(MAKE) update
@@ -81,6 +89,7 @@ dev:
 	git checkout $@
 	git pull -v
 	git checkout shadow -- $(MERGE)
+	$(MAKE) doc
 #	$(MAKE) doxy ; git add -f docs
 
 shadow:
