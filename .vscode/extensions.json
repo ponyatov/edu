@@ -1,0 +1,19 @@
+{
+    "recommendations": [
+        "ryuta46.multi-command",
+        "stkb.rewrap",
+        "tabnine.tabnine-vscode",
+        "ms-vscode.makefile-tools",
+        "xaver.clang-format",
+        // "usernamehw.errorlens",
+        // "ms-vscode-remote.remote-ssh",
+        // "ms-azuretools.vscode-docker",
+        // Rust
+        "rust-lang.rust-analyzer",
+        "bungcip.better-toml",
+        // Web/WASM
+        "dtsvet.vscode-wasm",
+        // repo local
+        // "dponyatov.webos"
+    ]
+}
